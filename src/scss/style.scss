@@ -6,14 +6,14 @@ html {
 }
 
 body {
-    font-family: 'AudiType', sans-serif;
+    font-family: 'SKODANext', sans-serif;
     font-size: 20px;
     line-height: 1;
     font-weight: 400;
     color: #000;
     position: relative;
     height: 100%;
-    background: #F5F7FA;
+    background: #FAFAFA;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -155,7 +155,7 @@ select {
 header {
     opacity: 0;
     transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
-    padding: 40px 0 40px 0;
+    padding: 32px 0 32px 0;
     background: #FFFFFF;
     .container {
         display: flex;
@@ -179,7 +179,10 @@ header.header-show {
     align-items: center;
     margin-right: 64px;
     img {
-        margin-right: 11px;
+        max-width: 143px;
+        width: 100%;
+        height: 31px;
+        margin-right: 29px;
     }
 }
 
@@ -187,66 +190,62 @@ header.header-show {
     b {
         display: block;
         font-weight: bold;
-        font-size: 15px;
-        line-height: 120%;
-        color: #000000;
+        font-size: 13px;
+        line-height: 100%;
+        color: #494949;
+        margin-bottom: 5px;
     }
     span {
         white-space: nowrap;
         display: block;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 120%;
-        color: #000000;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 100%;
+        color: #494949;
     }
 }
 
-.address {
-    background: url(../img/gps.svg) no-repeat left center;
-    padding: 0 0 0 31px;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 120%;
-    color: #000000;
-}
-
-.phone-worktime {
-    background: url(../img/tel-ico.svg) no-repeat left center;
+.address-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin-left: auto;
-    text-align: right;
-    padding: 0 0 0 38px;
     a {
         display: block;
         width: fit-content;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 120%;
-        color: #000000;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 135%;
         text-align: right;
-        margin-bottom: 5px;
+        color: #494949;
     }
     span {
         display: block;
-        font-weight: 300;
-        font-size: 12px;
-        line-height: 120%;
-        color: #000000;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 135%;
+        text-align: right;
+        color: #4BA82E;
     }
 }
 
 .content {
-    padding: 37px 0 0 0;
+    padding: 33px 0 0 0;
     h1 {
-        font-family: 'AudiTypeExtended', sans-serif;
         margin-top: 0;
-        font-weight: bold;
+        font-weight: 900;
         font-size: 41px;
-        line-height: 120%;
+        line-height: 130%;
+        text-transform: uppercase;
         color: #000000;
-        margin-bottom: 38px;
+        margin-bottom: 32px;
         transition: all 700ms ease, opacity 500ms ease;
         transform: translateY(100%);
         opacity: 0;
+        -webkit-transition: all 700ms ease, opacity 500ms ease;
+        -moz-transition: all 700ms ease, opacity 500ms ease;
+        -ms-transition: all 700ms ease, opacity 500ms ease;
+        -o-transition: all 700ms ease, opacity 500ms ease;
     }
 }
 
@@ -274,18 +273,19 @@ header.header-show {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-right: 105px;
+    margin-right: 83px;
     &:last-child {
         margin-right: 0;
     }
 }
 
 .exs-item__img {
+    flex-shrink: 0;
     position: relative;
     margin-right: 17px;
-    background: #000;
-    width: 64px;
-    height: 64px;
+    background: #4BA82E;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -308,7 +308,8 @@ header.header-show {
     font-weight: bold;
     font-size: 14px;
     line-height: 120%;
-    color: #000000;
+    text-transform: uppercase;
+    color: #494949;
 }
 
 .message-box {
@@ -375,7 +376,7 @@ header.header-show {
         display: block;
         width: 9px;
         height: 9px;
-        background: #32DD9F;
+        background: #4C9F45;
         position: absolute;
         bottom: 4px;
         right: 7px;
@@ -396,7 +397,7 @@ header.header-show {
 }
 
 .name {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 12px;
     line-height: 100%;
     color: #000000;
@@ -438,17 +439,21 @@ header.header-show {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    margin-right: 118px;
-    height: 195px;
+    margin-right: 106px;
+    height: 190px;
     margin-bottom: 45px;
     padding: 20px 20px 18px 20px;
     max-width: 158px;
     width: 100%;
     box-shadow: 0px 12px 31px rgba(0, 0, 0, 0.05);
-    border-radius: 13px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     @include tr2;
     cursor: pointer;
     z-index: 5;
@@ -457,8 +462,8 @@ header.header-show {
     }
     &:hover,
     &.active {
-        background: #BB0A30;
-        box-shadow: 0px 12px 31px rgba(187, 10, 48, 0.28);
+        background: #4BA82E;
+        box-shadow: 0px 14px 34px rgba(76, 159, 69, 0.35);
     }
 }
 
@@ -472,11 +477,12 @@ header.header-show {
 
 .car-item__title {
     @include tr2;
-    font-family: 'AudiTypeExtended', serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 100%;
-    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    color: #494949;
     margin-bottom: 10px;
 }
 
@@ -486,16 +492,15 @@ header.header-show {
 }
 
 .car-item__img {
-    min-width: 206px;
+    min-width: 260px;
     max-width: 230px;
-    min-height: 93px;
-    max-height: 143px;
+    min-height: 126px;
     width: max-content;
     position: absolute;
-    top: 50px;
+    top: 35px;
     left: 50%;
     transform: translateX(-50%);
-    height: 98px;
+    height: 126px;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -510,9 +515,9 @@ header.header-show {
 
 .car-item__price {
     font-weight: normal;
-    font-size: 14px;
-    line-height: 158%;
-    color: #000000;
+    font-size: 12px;
+    line-height: 100%;
+    color: #494949;
 }
 
 .car-item:hover .car-item__price,
@@ -524,17 +529,22 @@ header.header-show {
     align-self: flex-end;
     .message-text {
         color: #fff;
-        background: #BB0A30;
+        background: #4BA82E;
         box-shadow: 0px 7px 33px rgba(0, 0, 0, 0.04);
-        border-radius: 16px 0px 16px 16px;
-        -webkit-border-radius: 16px 0px 16px 16px;
-        -moz-border-radius: 16px 0px 16px 16px;
-        -ms-border-radius: 16px 0px 16px 16px;
-        -o-border-radius: 16px 0px 16px 16px;
+        border-radius: 10px 0px 10px 10px;
+        -webkit-border-radius: 10px 0px 10px 10px;
+        -moz-border-radius: 10px 0px 10px 10px;
+        -ms-border-radius: 10px 0px 10px 10px;
+        -o-border-radius: 10px 0px 10px 10px;
     }
     .name {
         text-align: right;
     }
+}
+
+.js-message--check-car .message-text {
+    text-transform: uppercase;
+    line-height: 100%;
 }
 
 .btns {
@@ -547,21 +557,21 @@ header.header-show {
         transition: all .25s cubic-bezier(0.075, 0.82, 0.165, 1);
         cursor: pointer;
         display: block;
-        padding: 10px 19px 10px 19px;
+        padding: 10px 20px 10px 20px;
         background: #EBEBEB;
+        border-radius: 10px;
         box-sizing: border-box;
-        border-radius: 16px;
         font-weight: normal;
         font-size: 14px;
         line-height: 100%;
         text-align: center;
-        color: #001E50;
+        color: #494949;
         &:first-child {
             margin-right: 16px;
         }
         &:hover,
         &.active {
-            background: #BB0A30;
+            background: #4BA82E;
             color: #fff;
         }
     }
@@ -607,7 +617,7 @@ header.header-show {
     max-width: 254px;
     width: 100%;
     margin-top: 20px;
-    background: #BB0A30;
+    background: #4BA82E;
     color: #fff;
     font-family: inherit;
     font-size: 17px;
@@ -629,7 +639,9 @@ header.header-show {
     width: 100%;
 }
 
-@media screen and (min-width:992px) {}
+.info-mobile {
+    display: none;
+}
 
 
 /* 
@@ -699,6 +711,56 @@ header.header-show {
     }
 }
 
+@media screen and (max-width: 735px) {
+    .info-mobile {
+        padding: 0 16px;
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .address-phone {
+            margin-left: 0;
+        }
+        .logo-text {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            b {
+                margin-right: 13px;
+            }
+        }
+    }
+    .content {
+        padding: 15px 0 0 0;
+    }
+    header .logo-text {
+        display: none;
+    }
+    header .address-phone span {
+        display: none;
+    }
+    .logo-text b {
+        margin-bottom: 0;
+    }
+    .address-phone span {
+        font-size: 11px;
+    }
+    header .address-phone a {
+        display: block;
+        font-size: 0;
+        width: 34px;
+        height: 34px;
+        background: url(../img/tel-ico.svg) no-repeat center;
+        border: 1px solid #E7E7E7;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .message-box {
         padding: 45px 20px 50px 20px;
@@ -755,8 +817,8 @@ header.header-show {
         padding: 20px 0;
     }
     .logo img {
-        width: 84px;
-        height: 28px;
+        width: 156px;
+        height: 34px;
         margin-right: 12px;
     }
     .exs-item {
@@ -765,7 +827,20 @@ header.header-show {
         justify-content: flex-start;
     }
     .content h1 {
-        font-size: 22px;
+        font-size: 24px;
+    }
+    .exs-item__text {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #494949;
+    }
+    .exs-item {
+        margin-bottom: 16px;
+    }
+    .exs-items {
+        margin-bottom: 10px;
     }
     .head-title span {
         font-size: 12px;
